@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mens - Fragrance Palace</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #2e1147;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000000;
+      color: #FFFFFF;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 24px;
+      padding-left: 0;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #5e00c2;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p.intro {
+      font-size: 18px;
+      color: #cfcfcf;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+      .loan-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+    }
+
+    /* Fragrance cards with hover and pressable effects */
+.loan-card {
+  background-color: #0d0b1f; /* dark card */
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+   .cologne-img {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 12px auto 16px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+    .loan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+  background-color: #1a0033;
+    }
+    .card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(140, 80, 255, 0.25);
+    }
+
+    .loan-card:active {
+      transform: translateY(2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      background-color: #e0e0e0;
+    }
+
+    .loan-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+  .loan-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+    .cta-section {
+     background: linear-gradient(180deg, #14001f, #0b0014);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(255, 218, 31, 0.6);
+  transition: all 0.3s ease;
+    }
+
+    .cta-hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(255, 115, 0, 0.25);
+    
+    }
+
+    .cta-section h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .cta-section a {
+      display: inline-block;
+      background-color: white;
+      color: #00C26E;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-section a:hover {
+      background-color: #dddddd;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0D1140;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">Fragrance Tracker</div>
+      <nav>
+        <ul>
+          <li><a href="FRAGRACE PALACE.html">Home</a></li>
+          <li><a href="MENS.html">Mens</a></li>
+          <li><a href="LADIES.html">LADIES</a></li>
+          <li><a href="UNISEX.html">UNISEX</a></li>
+          <li><a href="....">Most Popular</a></li>
+          <li><a href="....">Our Collection</a></li>
+          <li><a href="....">Gift Bundles</a></li>
+          <li><a href="Contacts page.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>MENS</h1>
+    <p class="intro"> Discover colognes that let you define your presence, whether at the office, out for the night, or at a special event. Smell powerful, feel unstoppable, and make every moment yours.</p>
+    
+  <section class="loan-options">
+    <!-- ABERCROBIE & FITCH -->
+    <div class="loan-card">
+        <h3>Abercrobie & Fitch Fierce</h3>
+        <img src="image/abertcrobie & Fitch-fierce.jpg" alt="Abercrobie & fitch Fierce" class="cologne-img">
+        <p>top: Lemon, Orange, Sea Notes<br>heart: Jasmine, Sage and Rose<br>base: Musk, Vetiver, Oakmoss</p>
+    </div>
+    <div class="loan-card" 
+        <h3>Abercrobie & Fitch First Instinct</h3>
+        <img src="image/abertcrobie & Fitch-first-Instinct.jpg" alt="Abercrobie & fitch First Instinct" class="cologne-img">
+        <p>top: Melon, Tonic Water <br>heart: Violet Leaf, Sichuan Pepper <br>base: Musk, Suede and Amber</p>
+    </div>
+     <div class="loan-card">
+        <h3>Abercrobie & Fitch Authentic Night Homme</h3>
+        <img src="image/abertcrobie & Fitch-Authentic-Night-Homme.jpg" alt="Abercrobie & fitch Authentic Night homme" class="cologne-img">
+        <p>top: Apple, Rhubarb and Lotus <br>heart: Vanilla, Lavender and Clary Sage <br>base: onka Bean, Leather and Oakmoss</p>
+    </div>
+     <div class="loan-card">
+        <h3>Abercrobie & Fitch First Instinct Blue"</h3>
+        <img src="image/abertcrobie & Fitch-First-Instinct-Blue.jpg" alt="Abercrobie & fitch First Instinct Blue" class="cologne-img">
+        <p>top: Apple, Bergamot and Cardamom <br>heart: Lavender, Rosemary and Pepper <br>base: Sandalwood, Tonka Bean and Amber</p>
+    </div>
+     <div class="loan-card">
+        <h3>Abercrobie & Fitch First Instinct Together</h3>
+        <img src="image/abertcrobie & Fitch-First-Instinct-Together.jpg" alt="Abercrobie & fitch First Instinct Togther" class="cologne-img">
+        <p>top: Green Apple, Pineapple Leaf <br>heart: Lavender and Orange Blossom <br>base: Musk, Sandalwood and Cedar</p>
+    </div>
+    <!-- BENTLEY -->
+     <div class="loan-card">
+        <h3>Bentley Become</h3>
+        <img src="image/Bentley-Become.jpg" alt="Bentley Become" class="cologne-img">
+        <p>top: Green Apple, Pineapple Leaf <br>heart: Lavender and Orange Blossom <br>base: Musk, Sandalwood and Cedar</p>
+    </div>
+     <div class="loan-card">
+        <h3>Bentley Infinite</h3>
+        <img src="image/Bentley-Infinite.jpg" alt="Bentley Infinite" class="cologne-img">
+        <p>top: Citruses, Cedar and Lavender <br>heart: Violet, Bourbon Pepper and Geranium <br>base: Haitian Vetiver, Ambergris and Patchouli</p>
+    </div>
+     <div class="loan-card">
+        <h3>Bentley Infinite Intense</h3>
+        <img src="image/Bentley-Infinite-Intense.jpg" alt="Bentley Infinite Intense" class="cologne-img">
+        <p>top: Black Pepper, Violet, Lavender and Geranium<br>heart: Spices, Elemi resin, Siam Benzoin <br>base: Haitian Vetiver, Cedar, Musk</p>
+    </div>
+    <div class="loan-card">
+        <h3>Bentley Infinite Rush</h3>
+        <img src="image/Bentley-Infinite-Rush.jpg" alt="Bentley Infinite Rush" class="cologne-img">
+        <p>top: Pink Pepper, Mandarin Orange and Rosemary<br>heart: Vetiver, Cedar and elemi <br>base: Moss, Amber and White Musk.</p>
+    </div>
+    <div class="loan-card">
+        <h3>Bentley Infinite Rush White</h3>
+        <img src="image/Bentley-Infinite-Rush-White.jpg" alt="Bentley Infinite Rush White" class="cologne-img">
+        <p>top: Italian Mandarin and Lavender <br>heart: Turkish Rose, Basil and Thyme <br>base: White Musk, Sandalwood and Cashmere Wood</p>
+    </div>
+<!-- BURBERRY -->
+<div class="loan-card">
+        <h3>Burberry Men</h3>
+        <img src="image/Burberry-Burberry-Men.jpg" alt="Burberry Men" class="cologne-img">
+        <p>top: Mint, Lavender, Bergamot <br>heart: Cedar, Sandalwood, Geranium <br>base: Musk, Vanilla and Amber </p>
+    </div>
+    <!-- DAVID BECKAM -->
+    <div class="loan-card">
+        <h3>David Beckam Amber Breeze</h3>
+        <img src="image/David-Beckam-Amber-Freeze.jpg" alt="David Beckam Amber Freeze" class="cologne-img">
+        <p>top: Bergamot, Rosemary and Black Pepper <br>heart: Lavender, Rose and Clary Sage <br>base: Tonka, Vetiver and Patchouli </p>
+    </div>
+     <div class="loan-card">
+        <h3>David Beckam Classic Homme</h3>
+        <img src="image/David-Beckam-Classic-Homme.jpg" alt="David Beckam Classic Homme" class="cologne-img">
+        <p>top: Sichuan Pepper, Citrus and Ginger <br>heart: Rosemary, Cashmere Wood and Leather <br>base: Musk, Patchouli and Redwood </p>
+    </div>
+       <div class="loan-card">
+        <h3>David Beckam Homme</h3>
+        <img src="image/David-Beckam-Homme.jpg" alt="David Beckam Homme" class="cologne-img">
+        <p>top: Sichuan Pepper, Citrus and Ginger <br>heart: Rosemary, Cashmere Wood and Leather <br>base: Mahogany, Musk and Patchouli. </p>
+    </div>
+        <div class="loan-card">
+        <h3>David Beckam The Essence</h3>
+        <img src="image/David-Beckam-The-Essence.jpg" alt="David Beckam The Essence" class="cologne-img">
+        <p>top: Grapefruit, Violet Leaf and Lavender <br>heart: Apple, Pineapple and Cardamom <br>base: Kashmir wood, Patchouli and Tonka Bean </p>
+    </div>
+    <!-- DIOR -->
+     <div class="loan-card">
+        <h3>Dior Homme Intense 2025 </h3>
+        <img src="image/Dior-Homme-Intense-2025.jpg" alt="Dior Homme Intense 2025" class="cologne-img">
+        <p>top: Tuscan Iris <br>heart: Ambrette <br>base: Virginia Cedar </p>
+    </div>
+      <div class="loan-card">
+        <h3>Dior Homme Original </h3>
+        <img src="image/Dior-Homme-Original.jpg" alt="Dior Homme Original" class="cologne-img">
+        <p>top: Tuscan Iris <br>heart: Guatemalan Cardamom <br>base: Vetiver</p>
+    </div>
+      <div class="loan-card">
+        <h3>Dior Homme Parfum </h3>
+        <img src="image/Dior-Homme-Parfum.jpg" alt="Dior Homme Parfum" class="cologne-img">
+        <p>Top: Tuscan Iris, Italian Orange <br> Heart: Leather, Rose <br> Base: Sandalwood, Ambrette (Musk Mallow), Agarwood (Oud) and Cedar</p>
+    </div>
+      <div class="loan-card">
+        <h3>Dior Homme Parfum 2025 </h3>
+        <img src="image/Dior-Homme-parfum-2025.jpg" alt="Dior Homme Parfum 2025" class="cologne-img">
+        <p>top: Tuscan Iris <br>heart: Ambrette <br>base: Patchouli and Vetiver</p>
+    </div>
+      <div class="loan-card">
+        <h3>Dior Homme Intense 2025 </h3>
+        <img src="image/Dior-Homme-Sport.jpg" alt="Dior Homme Sport" class="cologne-img">
+        <p>top: Amalfi Lemon, Grapefruit, Bergamot <br>heart: Ginger, Vetiver and Virginia Cedar <br>base: Rosemary, Lavender and Sandalwood </p>
+    </div>
+    <!--FERRARI-->
+       <div class="loan-card">
+        <h3>Ferrari Black Ferrari </h3>
+        <img src="image/Ferrari-Black-Ferarri.jpg" alt="Ferrari Black Ferrari" class="cologne-img">
+        <p>top: Red Apple, Plum, Lime <br>heart: Cinnamon, Jasmine, Cardamom <br>base: Vanilla, Cedar and Musk. </p>
+    </div>
+    <div class="loan-card">
+        <h3>Ferrari Extreme Ferrari</h3>
+        <img src="image/Ferrari-Extreme-Ferrari.jpg" alt="Ferrari Extreme Ferrari" class="cologne-img">
+        <p>top: Cardamom and Bergamot <br>heart: Geranium, Nutmeg and Cedar <br>base: Musk and Oakmoss.</p>
+    </div>
+    <div class="loan-card">
+        <h3>Ferrari Light Essence</h3>
+        <img src="image/Ferrari-Light-Essence.jpg" alt="Ferrari Light Essence" class="cologne-img">
+    </div>
+    <div class="loan-card">
+        <h3>Ferrari Man In Red</h3>
+        <img src="image/Ferrari-Man-In-Red.jpg" alt="Ferrari Man In Red" class="cologne-img">
+        <p>top: Red, Apple, Cardamom and Bergamot <br>heart: Yellow Plum, Lavender and Orange Blossom<br>base: Cedar, Tonka Bean and Labdanum</p>
+    </div>
+    <div class="loan-card">
+        <h3>Ferrari No 1</h3>
+        <img src="image/Ferrari-No-1.jpg" alt="Ferrari No 1" class="cologne-img">
+        <p>top: Red, Apple, Cardamom and Bergamot <br>heart: Yellow Plum, Lavender and Orange Blossom<br>base: Cedar, Tonka Bean and Labdanum</p>
+    </div>
+
+
+
+
+    
+
+
+
+  
+  
+    <!-- VALENTINO -->
+  <div class="loan-card">
+    <h3>Valentino Uomo</h3>
+    <img src="/Users/krishgautam/Library/Mobile Documents/com~apple~CloudDocs/Fragrance Palace /Valentino Uomo Cologne.jpg" alt="Valentino Uomo" class="cologne-img">
+    <p>Top: Bergamot, Myrrh<br>Heart: Coffee, Hazelnut<br>Base: Leather, Cedar, Tonka</p>
+  </div>
+  <div class="loan-card">
+    <h3>Valentino Uomo Intense</h3>
+    <img src="/Users/krishgautam/Library/Mobile Documents/com~apple~CloudDocs/Fragrance Palace /Valentino Uomo Intense Cologne.jpg" alt="Valentino Uomo Intense" class="cologne-img">
+    <p>Top: Rhubarb, Clary Sage<br>Heart: Iris, Leather<br>Base: Vanilla, Tonka, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Valentino-born-in-Roma.jpg" alt="Valentino born in Roma" class="cologne-img">
+    <h3>Valentino Born in Roma</h3>
+    <p>Top: Black Pepper, Ginger<br>Heart: Jasmine, Woody Notes<br>Base: Patchouli, Vanilla, Amberwood</p>
+  </div>
+
+  <!-- RALPH LAUREN POLO -->
+  <div class="loan-card">
+    <img src="images/Polo-Blue.jpg" alt="Polo Blue" class="cologne-img">
+    <h3>Polo Blue</h3>
+    <p>Top: Melon, Cucumber, Mandarin Orange<br>Heart: Basil, Sage, Geranium<br>Base: Musk, Suede, Woodsy Notes</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Polo-Black.jpg" alt="Polo Black" class="cologne-img">
+    <h3>Polo Black</h3>
+    <p>Top: Iced Mango, Green Citrus<br>Heart: Sage, Silver Armoise<br>Base: Sandalwood, Patchouli, Tonka</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Polo-Red.jpg" alt="Polo Red" class="cologne-img">
+    <h3>Polo Red</h3>
+    <p>Top: Red Grapefruit, Cranberry<br>Heart: Saffron, Lavender<br>Base: Coffee, Amber, Cedar</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Polo-Green.jpg" alt="Polo Green" class="cologne-img">
+    <h3>Polo Green (Original)</h3>
+    <p>Top: Pine, Juniper<br>Heart: Coriander, Basil<br>Base: Oakmoss, Tobacco, Amber</p>
+  </div>
+
+  <!-- HUGO BOSS -->
+  <div class="loan-card">
+    <img src="images/BOSS-Bottled.jpg" alt="Boss Bottled" class="cologne-img">
+    <h3>BOSS Bottled</h3>
+    <p>Top: Apple, Citruses, Plum<br>Heart: Cinnamon, Geranium, Clove<br>Base: Sandalwood, Cedar, Vetiver</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Boss-The-Scent.jpg" alt="BOSS The Scent" class="cologne-img">
+    <h3>BOSS The Scent</h3>
+    <p>Top: Ginger, Bergamot<br>Heart: Maninka Fruit, Lavender<br>Base: Leather, Woods, Moss</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Boss-Bottled-Intense.jpg" alt="BOSS Bottled Intense" class="cologne-img">
+    <h3>BOSS Bottled Intense</h3>
+    <p>Top: Apple, Plum<br>Heart: Clove, Cinnamon<br>Base: Sandalwood, Vanilla, Cedar</p>
+  </div>
+
+  <!-- CREED -->
+   <div class="loan-card"
+  <img src="images/Creed-Aventus.jpg" alt="Creed Aventus" class="cologne-img">
+   <h3>Creed Aventus</h3>
+   <p>Top: Apple, Plum<br>Heart: Clove, Cinnamon<br>Base: Sandalwood, Vanilla, Cedar</p>
+</div>
+
+  <!-- DIOR -->
+  <div class="loan-card">
+    <img src="images/Dior-Homme Intense.jpg" alt="Dior Homme Intense" class="cologne-img">
+    <h3>Dior Homme Intense</h3>
+    <p>Top: Lavender, Sage<br>Heart: Iris, Ambrette<br>Base: Vetiver, Virginia Cedar, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/Dior-Sauvage.jpg" alt="Dior Sauvage" class="cologne-img">
+    <h3>Dior Sauvage</h3>
+    <p>Top: Calabrian Bergamot, Pepper<br>Heart: Sichuan Pepper, Lavender<br>Base: Ambroxan, Vanilla, Cedar</p>
+  </div>
+
+  <!-- YVES SAINT LAURENT -->
+  <div class="loan-card">
+    <img src="images/YSL Y.jpg" alt="YSL Y" class="cologne-img">
+    <h3>YSL Y</h3>
+    <p>Top: Bergamot, Ginger, Apple<br>Heart: Sage, Juniper Berries<br>Base: Amberwood, Cedar, Tonka</p>
+  </div>
+  <div class="loan-card">
+    <img src="images/YSL-Stronger-With-You-Parfum.jpg" alt="YSL Stronger With You Parfum" class="cologne-img">
+    <h3>YSL Stronger With You Parfum</h3>
+    <p>Top: Cardamom, Pink Pepper<br>Heart: Violet, Sage<br>Base: Vanilla, Chestnut, Amberwood</p>
+  </div>
+
+  <!-- CHANEL -->
+  <div class="loan-card">
+    <img src="images/Bleu de Chanel.jpg" alt="Bleu de Chanel" class="cologne-img">
+    <h3>Bleu de Chanel</h3>
+    <p>Top: Grapefruit, Lemon, Mint<br>Heart: Ginger, Iso E Super, Nutmeg<br>Base: Sandalwood, Cedar, Incense</p>
+  </div>
+
+  <!-- JEAN PAUL GAULTIER -->
+  <div class="loan-card">
+    <h3>Le Male</h3>
+    <p>Top: Mint, Lavender, Bergamot<br>Heart: Cinnamon, Orange Blossom, Cumin<br>Base: Vanilla, Tonka Bean, Sandalwood</p>
+  </div>
+  <div class="loan-card">
+    <h3>Ultra Male</h3>
+    <p>Top: Pear, Mint, Lavender<br>Heart: Cinnamon, Clary Sage<br>Base: Vanilla, Amber, Patchouli</p>
+  </div>
+
+  <!-- GIORGIO ARMANI -->
+  <div class="loan-card">
+    <h3>Acqua di Gio Pour Homme</h3>
+    <p>Top: Jasmine, Bergamot, Lime<br>Heart: Nutmeg, Coriander, Marine Accord<br>Base: Cedarwood, Patchouli, Oakmoss</p>
+  </div>
+  <div class="loan-card">
+    <h3>Acqua di Gio Profumo</h3>
+    <p>Top: Bergamot, Marine Notes<br>Heart: Geranium, Sage, Rosemary<br>Base: Incense, Patchouli, Musk</p>
+  </div>
+
+  <!-- AMOUAGE -->
+  <div class="loan-card">
+    <h3>Fico di Amalfi</h3>
+    <p>Top: Lemon, Fig Leaf<br>Heart: Fig Nectar, Jasmine<br>Base: Coconut, Cedar, Musk</p>
+  </div>
+
+  <!-- JEAN PAUL GUILTIER -->
+  <div class="loan-card">
+    <h3>Scandal Pour Homme</h3>
+    <p>Top: Grapefruit, Aldehydes<br>Heart: Honeyed Tobacco, Tonka<br>Base: Patchouli, Benzoin, Amber</p>
+  </div>
+
+  <!-- PRADA -->
+  <div class="loan-card">
+    <h3>Prada Luna Rossa Carbon</h3>
+    <p>Top: Lavender, Artemisia<br>Heart: Metallic Notes, Iso E Super<br>Base: Amber, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Prada L’Homme</h3>
+    <p>Top: Neroli, Black Pepper<br>Heart: Iris, Geranium<br>Base: Amber, Cedarwood</p>
+  </div>
+
+  <!-- CALVIN KLEIN -->
+  <div class="loan-card">
+    <h3>CK One</h3>
+    <p>Top: Bergamot, Cardamom, Pineapple<br>Heart: Violet, Nutmeg, Rose<br>Base: Musk, Amber, Cedar</p>
+  </div>
+  <div class="loan-card">
+    <h3>CK Eternity for Men</h3>
+    <p>Top: Lavender, Mandarin<br>Heart: Coriander, Lily<br>Base: Sandalwood, Amber, Musk</p>
+  </div>
+  <div class="loan-card">
+    <h3>CK Eternity Air</h3>
+    <p>Top: Grapefruit, Ginger<br>Heart: Violet Leaf, Cyclamen<br>Base: Cedarwood, Musk</p>
+  </div>
+  <!-- TOM FORD -->
+  <div class="loan-card">
+    <h3>Tobacco Vanille</h3>
+    <p>Top: Tobacco Leaf, Spices<br>Heart/Base: Sweet Vanilla</p>
+  </div>
+  <div class="loan-card">
+    <h3>Oud Wood</h3>
+    <p>Top: Oud, Cardamom<br>Heart/Base: Sandalwood</p>
+  </div>
+  <div class="loan-card">
+    <h3>Neroli Portofino</h3>
+    <p>Top: Neroli, Citrus<br>Heart/Base: Amber</p>
+  </div>
+  <div class="loan-card">
+    <h3>Fucking Fabulous</h3>
+    <p>Top/Heart/Base: Leather, Tonka, Bitter Almond</p>
+  </div>
+  <div class="loan-card">
+    <h3>Costa Azzurra</h3>
+    <p>Top/Heart/Base: Driftwood, Cypress, Sea Notes</p>
+  </div>
+  <div class="loan-card">
+    <h3>Black Orchid</h3>
+    <p>Top/Heart/Base: Black Truffle, Orchid, Dark Chocolate</p>
+  </div>
+
+  <!-- GUCCI -->
+  <div class="loan-card">
+    <h3>Gucci Guilty Pour Homme</h3>
+    <p>Top: Lavender, Lemon<br>Heart/Base: Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Gucci Mémoire d’une Odeur</h3>
+    <p>Top: Roman Chamomile<br>Heart/Base: Jasmine Petals, Sandalwood</p>
+  </div>
+  <div class="loan-card">
+    <h3>Gucci pour Homme II</h3>
+    <p>Top: Green Mandarin<br>Heart/Base: Tuscan Iris, Musky Woods</p>
+  </div>
+  <div class="loan-card">
+    <h3>Gucci Flora Gorgeous Gardenia</h3>
+    <p>Top/Heart/Base: Red Berries, Gardenia, Patchouli</p>
+  </div>
+
+  <!-- MONTBLANC -->
+  <div class="loan-card">
+    <h3>Explorer</h3>
+    <p>Top: Bergamot<br>Heart/Base: Vetiver, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Legend</h3>
+    <p>Top: Lavender, Pineapple Leaf<br>Heart/Base: Oakmoss</p>
+  </div>
+  <div class="loan-card">
+    <h3>Emblem</h3>
+    <p>Top: Red Mandarin, Cardamom<br>Heart/Base: Leather</p>
+  </div>
+
+  <!-- VERSACE -->
+  <div class="loan-card">
+    <h3>Versace Eros</h3>
+    <img src="/Users/krishgautam/Library/Mobile Documents/com~apple~CloudDocs/Fragrance Palace /Versace Eros cologne.jpg" alt="Versace-Eros" class="cologne-img" width="600px" height="400px">
+    <p>
+      <strong>Top:</strong> Mint, Green Apple, Lemon<br>
+      <strong>Heart:</strong> Tonka Bean, Ambroxan, Geranium<br>
+      <strong>Base:</strong> Madagascar Vanilla, Oakmoss, Cedarwood
+    </p>
+  </div>
+  <div class="loan-card">
+    <h3>Versace Dylan Blue</h3>
+    <img src="/Users/krishgautam/Library/Mobile Documents/com~apple~CloudDocs/Fragrance Palace /Versace Dylan Blue cologne.jpg" alt="Versace Dylan Blue" class="cologne-img">
+    <p>
+      <strong>Top:</strong> Calabrian Bergamot, Grapefruit, Fig Leaf<br>
+      <strong>Heart:</strong> Black Pepper, Ambroxan, Patchouli<br>
+      <strong>Base:</strong> Musk, Tonka Bean, Incense
+    </p>
+  </div>
+  <div class="loan-card">
+    <h3>Versace Pour Homme</h3>
+    <img src="/Users/krishgautam/Library/Mobile Documents/com~apple~CloudDocs/Fragrance Palace /Versace Eros Najim.jpg" alt="Versace Pour Homme" class="cologne-img">
+    <p>
+      <strong>Top:</strong> Lemon, Bergamot, Neroli<br>
+      <strong>Heart:</strong> Hyacinth, Clary Sage, Cedarwood<br>
+      <strong>Base:</strong> Tonka Bean, Amber, Musk
+    </p>
+  </div>
+  <div class="loan-card">
+    <h3>Versace Oud Noir</h3>
+    <img src="/Users/krishgautam/Library/Mobile Documents/com~apple~CloudDocs/Fragrance Palace /versace Oud Noir.JPG" alt="Versace Oud Noir" class="cologne-img">
+    <p>
+      <strong>Top:</strong> Bitter Orange, Cardamom<br>
+      <strong>Heart:</strong> Oud, Black Leather, Pepperwood<br>
+      <strong>Base:</strong> Vanilla, Amber, Patchouli
+    </p>
+  </div>
+
+  <!-- BVLGARI -->
+  <div class="loan-card">
+    <h3>Bvlgari Man in Black</h3>
+    <p>Top/Heart/Base: Rum, Spices, Leather</p>
+  </div>
+  <div class="loan-card">
+    <h3>Bvlgari Aqva Pour Homme</h3>
+    <p>Top/Heart/Base: Marine Notes, Orange, Petitgrain</p>
+  </div>
+  <div class="loan-card">
+    <h3>Bvlgari Pour Homme Soir</h3>
+    <p>Top/Heart/Base: Cardamom, Iris, Musk</p>
+  </div>
+
+  <!-- MAISON MARGIELA REPLICA -->
+  <div class="loan-card">
+    <h3>Jazz Club</h3>
+    <p>Top/Heart/Base: Rum, Tobacco Leaf, Vanilla</p>
+  </div>
+  <div class="loan-card">
+    <h3>By the Fireplace</h3>
+    <p>Top/Heart/Base: Chestnut, Vanilla, Smoky Woods</p>
+  </div>
+  <div class="loan-card">
+    <h3>Lazy Sunday Morning</h3>
+    <p>Top/Heart/Base: Lily of the Valley, Musk, Iris</p>
+  </div>
+
+  <!-- PACO RABANNE -->
+  <div class="loan-card">
+    <h3>1 Million</h3>
+    <p>Top/Heart/Base: Blood Mandarin, Cinnamon, Leather</p>
+  </div>
+  <div class="loan-card">
+    <h3>Invictus</h3>
+    <p>Top/Heart/Base: Grapefruit, Marine Accord, Guaiac Wood</p>
+  </div>
+  <div class="loan-card">
+    <h3>Olympéa</h3>
+    <p>Top/Heart/Base: Salted Vanilla, Jasmine, Ambergris</p>
+  </div>
+
+  <!-- YVES SAINT LAURENT MORE -->
+  <div class="loan-card">
+    <h3>YSL Y Eau de Parfum</h3>
+    <p>Top/Heart/Base: Ginger, Apple, Tonka</p>
+  </div>
+  <div class="loan-card">
+    <h3>La Nuit de l’Homme</h3>
+    <p>Top/Heart/Base: Cardamom, Cedar, Bergamot</p>
+  </div>
+
+  <!-- GIVENCHY -->
+  <div class="loan-card">
+    <h3>Gentleman Givenchy</h3>
+    <p>Top/Heart/Base: Pear, Black Pepper, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Play Intense</h3>
+    <p>Top/Heart/Base: Almond, Tonka Bean, Coffee</p>
+  </div>
+
+  <!-- ARMANI -->
+  <div class="loan-card">
+    <h3>Armani Code</h3>
+    <p>Top/Heart/Base: Lemon, Star Anise, Leather</p>
+  </div>
+  <div class="loan-card">
+    <h3>Armani Code Profumo</h3>
+    <p>Top/Heart/Base: Cardamom, Amber, Tonka</p>
+  </div>
+
+  <!-- HERMÈS -->
+  <div class="loan-card">
+    <h3>Terre d’Hermès</h3>
+    <p>Top/Heart/Base: Orange, Pepper, Vetiver</p>
+  </div>
+  <div class="loan-card">
+    <h3>Eau des Merveilles</h3>
+    <p>Top/Heart/Base: Orange, Amber, Cedar</p>
+  </div>
+
+  <!-- YSL MORE -->
+  <div class="loan-card">
+    <h3>Body Kouros (Vintage Inspired)</h3>
+    <p>Top/Heart/Base: Coriander, Moss, Vanilla</p>
+  </div>
+
+  <!-- CAROLINA HERRERA -->
+  <div class="loan-card">
+    <h3>Bad Boy</h3>
+    <p>Top/Heart/Base: Black Pepper, Cedar, Tonka Bean</p>
+  </div>
+  <div class="loan-card">
+    <h3>212 VIP</h3>
+    <p>Top/Heart/Base: Rum, Passionfruit, Vanilla</p>
+  </div>
+
+  <!-- JEAN PAUL GAULTIER MORE -->
+  <div class="loan-card">
+    <h3>Ultra Male</h3>
+    <p>Top/Heart/Base: Pear, Lavender, Vanilla</p>
+  </div>
+
+  <!-- DAVIDOFF -->
+  <div class="loan-card">
+    <h3>Cool Water</h3>
+    <p>Top/Heart/Base: Mint, Lavender, Musk</p>
+  </div>
+
+  <!-- HUGO BOSS MORE -->
+  <div class="loan-card">
+    <h3>Boss Alive</h3>
+    <p>Top/Heart/Base: Red Apple, Cinnamon, Cedarwood</p>
+  </div>
+  <!--- TIMMY HILFIGER TOMMY -->
+  <div class="loan-card">
+    <h3>Tommy Hilgiger Tommy</h3>
+    <p>Top/Heart/Base: Lavender, Apple, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Tommy Hilgiger Tommy forever EDT</h3>
+    <p>Top/Heart/Base: Lemon, Black Pepper, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Tommy Hilgiger Tommy Impact EDT</h3>
+    <p>Top/Heart/Base: Citrus, Spices, Musky Woods</p>
+  </div>
+  <div class="loan-card">
+    <h3>Tommy Hilgiger Tommy EDP Intense</h3>
+    <p>Top/Heart/Base: Spicy Plum, Amber, Cedar</p>
+  </div>
+  <div class="loan-card">
+    <h3>Tommy Hilgiger Tommy Impact Together</h3>
+    <p>Top/Heart/Base: Grapefruit, Green Apple, Musk</p>
+  </div>
+  <div class="loan-card">
+    <h3>Tommy Summer Edition</h3>
+    <p>Top/Heart/Base: Cardamom, Rosemary, Patchouli</p>
+  </div>
+  <div class="loan-card">
+    <h3>Limited Edition Tommy Vibrant Summer</h3>
+    <p>Top/Heart/Base: Cardamom, Lemon, Patchouli/p>
+  </div>
+  <div class="loan-card">
+    <h3>Tommy Summer 2025</h3>
+    <p>Top/Heart/Base: Lemon, Rosemary, Musk/p>
+  </div>
+</section>
+
+    <section class="cta-section">
+      <h2>Couldn't find your NEEDS? Check our Bundles on DISCOUNT</h2>
+      <p>Get your cologne bundles which offer the best prices today.</p>
+      
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Fragrance Palace. All rights reserved.
+  </footer>
+
+</body>
+</html>

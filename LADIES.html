@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LADIES - Financial Tracker</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #1a0033;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000000;
+      color: #FFFFFF;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 24px;
+      padding-left: 0;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00C26E;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p.intro {
+      font-size: 18px;
+      color: #cfcfcf;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .loan-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .loan-card {
+      background-color: white;
+      color: #0D1140;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .loan-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #00C26E;
+    }
+
+    .loan-card p {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .cta-section {
+      background-color: #00C26E;
+      color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .cta-section button {
+      background-color: white;
+      color: #00C26E;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-section button:hover {
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0D1140;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">Fragrance Palace</div>
+      <nav>
+        <ul>
+          <li><a href="FRAGRACE PALACE.html">Home</a></li>
+          <li><a href="MENS.html">Mens</a></li>
+          <li><a href="LADIES.html">Ladies</a></li>
+           <li><a href="UNISEX.html"></a>Unisex</li>
+          <li><a href="...."></a>Most Popular</li>
+          <li><a href="...."></a>Our Collection</li>
+          <li><a href="...."></a>Gift Bundles</li>
+          <li><a href="Contacts page.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Business Loans</h1>
+    <p class="intro">
+      Compare flexible business loan options tailored to your needs. Whether you're growing your startup or expanding operations, we help you find competitive rates fast.
+    </p>
+
+    <section class="loan-options">
+      <div class="loan-card">
+        <h3>Startup Loans</h3>
+        <p>Perfect for new businesses looking for a boost. Get funding with lower credit requirements and fast approval.</p>
+      </div>
+      <div class="loan-card">
+        <h3>Short-Term Loans</h3>
+        <p>Great for covering immediate costs or cash flow gaps. Terms range from 3 to 18 months with fixed payments.</p>
+      </div>
+      <div class="loan-card">
+        <h3>Equipment Financing</h3>
+        <p>Purchase or lease essential equipment with structured monthly payments and potential tax benefits.</p>
+      </div>
+      <div class="loan-card">
+        <h3>Line of Credit</h3>
+        <p>Access flexible capital when you need it. Only pay interest on the funds you use.</p>
+      </div>
+      <div class="loan-card">
+        <h3>Commercial Property Loans</h3>
+        <p>Secure funding for purchasing, renovating, or refinancing business premises.</p>
+      </div>
+      <div class="loan-card">
+        <h3>SBA-Backed Loans</h3>
+        <p>Loans partially guaranteed by government bodies — competitive interest rates and long-term repayment.</p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+  <h2>Couldn't find your NEEDS. Come see Bundles on DISCOUNT</h2>
+  <p>Get your cologne BUNDLE which offers the best PRICES today.</p>
+  <a href="Business Loan Page.HTML" class="cta-button">SEE MORE</a>
+</section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Fragrance Palace. All rights reserved.
+  </footer>
+
+</body>
+</html>
